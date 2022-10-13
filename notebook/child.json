@@ -1,41 +1,16 @@
 {
-    "name": "testpoc1",
-    "properties": {
-        "activities": [
-            {
-                "name": "demo_notebook",
-                "type": "SynapseNotebook",
-                "dependsOn": [],
-                "policy": {
-                    "timeout": "0.12:00:00",
-                    "retry": 0,
-                    "retryIntervalInSeconds": 30,
-                    "secureOutput": false,
-                    "secureInput": false
-                },
-                "userProperties": [],
-                "typeProperties": {
-                    "snapshot": true
-                }
-            },
-            {
-                "name": "SQL pool stored procedure1",
-                "type": "SqlPoolStoredProcedure",
-                "dependsOn": [],
-                "policy": {
-                    "timeout": "0.12:00:00",
-                    "retry": 0,
-                    "retryIntervalInSeconds": 30,
-                    "secureOutput": false,
-                    "secureInput": false
-                },
-                "userProperties": [],
-                "sqlPool": {
-                    "referenceName": "testpocsqlpool1",
-                    "type": "SqlPoolReference"
-                }
-            }
-        ],
-        "annotations": []
+    "name": "demo_notebook",
+    "type": "SynapseNotebook",
+    "dependsOn": [],
+    "policy": {
+        "timeout": "0.12:00:00",
+        "retry": 0,
+        "retryIntervalInSeconds": 30,
+        "secureOutput": false,
+        "secureInput": false
+    },
+    "userProperties": [],
+    "typeProperties": {
+        "snapshot": true
     }
 }
